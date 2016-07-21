@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
 import com.javahelp.wpreader.R;
+import com.javahelp.wpreader.ui.fragments.MainFragment;
 
 public class MainActivity
         extends AppCompatActivity
@@ -13,5 +14,13 @@ public class MainActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_activity);
+        init();
+    }
+    private void init()
+    {
+        getSupportFragmentManager()
+                .beginTransaction()
+                .add(R.id.main_frame, new MainFragment())
+                .commit();
     }
 }
