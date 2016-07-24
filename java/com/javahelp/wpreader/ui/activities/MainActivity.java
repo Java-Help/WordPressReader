@@ -16,6 +16,7 @@ public class MainActivity
         setContentView(R.layout.main_activity);
         init();
     }
+
     private void init()
     {
         getSupportFragmentManager()
