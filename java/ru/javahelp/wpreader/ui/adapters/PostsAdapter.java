@@ -1,4 +1,4 @@
-package com.javahelp.wpreader.ui.adapters;
+package ru.javahelp.wpreader.ui.adapters;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -6,8 +6,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-
-import com.javahelp.wpreader.R;
 
 import java.util.List;
 
@@ -26,7 +24,7 @@ public class PostsAdapter
     public PostHolder onCreateViewHolder(ViewGroup parent, int viewType)
     {
         LayoutInflater inflater = LayoutInflater.from(context);
-        View v = inflater.inflate(R.layout.post, parent, false);
+        View v = inflater.inflate(ru.javahelp.wpreader.R.layout.post, parent, false);
         return new PostHolder(v);
     }
 
@@ -59,7 +57,7 @@ public class PostsAdapter
         public PostHolder(View v)
         {
             super(v);
-            text = (TextView) v.findViewById(R.id.text);
+            text = (TextView) v.findViewById(ru.javahelp.wpreader.R.id.text);
         }
     }
 }

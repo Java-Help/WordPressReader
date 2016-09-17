@@ -1,10 +1,10 @@
-package com.javahelp.wpreader.ui.activities;
+package ru.javahelp.wpreader.ui.activities;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
-import com.javahelp.wpreader.R;
-import com.javahelp.wpreader.ui.fragments.MainFragment;
+import ru.javahelp.wpreader.R;
+import ru.javahelp.wpreader.ui.fragments.MainFragment;
 
 public class MainActivity
         extends AppCompatActivity

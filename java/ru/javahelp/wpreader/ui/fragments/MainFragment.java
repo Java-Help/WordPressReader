@@ -1,4 +1,4 @@
-package com.javahelp.wpreader.ui.fragments;
+package ru.javahelp.wpreader.ui.fragments;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -8,8 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.javahelp.wpreader.R;
-import com.javahelp.wpreader.ui.adapters.PostsAdapter;
+import ru.javahelp.wpreader.ui.adapters.PostsAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,7 +25,7 @@ public class MainFragment
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
     {
-        View v = inflater.inflate(R.layout.main_fragment, container, false);
+        View v = inflater.inflate(ru.javahelp.wpreader.R.layout.main_fragment, container, false);
         initViews(v);
         init();
         return v;
@@ -34,7 +33,7 @@ public class MainFragment
 
     private void initViews(View v)
     {
-        list_posts = (RecyclerView) v.findViewById(R.id.list_posts);
+        list_posts = (RecyclerView) v.findViewById(ru.javahelp.wpreader.R.id.list_posts);
     }
 
     private void init()
